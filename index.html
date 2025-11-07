@@ -3,15 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Phaser 3 Dev (CDN)</title>
+		<title>Phaser 3 Dev (Vite + ES6)</title>
 	</head>
 	<body>
 		<div id="game"></div>
 
-		<!-- 使用 JSDelivr CDN 加载 Phaser（UMD，全局 Phaser 变量） -->
-		<script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
-
-		<!-- 不使用打包器：按顺序加载场景与主脚本 -->
-		<script type = "module" src="/phaser3-dev/js/game.js"></script>
+		<!-- Vite will handle module imports; main.js imports Phaser from node_modules -->
+		<script type="module" src="/src/main.js"></script>
 	</body>
 </html>
